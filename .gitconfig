@@ -94,11 +94,6 @@
 	changed = green
 	untracked = cyan
 
-[commit]
-
-	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
-
 [diff]
 
 	# Detect copies as well as renames.
@@ -124,3 +119,6 @@
 [init]
 
 	defaultBranch = master
+[user]
+	name = Matthew Thomas
+	email = mattcthomas@me.com
