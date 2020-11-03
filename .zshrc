@@ -25,5 +25,5 @@ chpwd() {
 alias cl="clear"
 alias kill="kill-port"
 alias zsh:rl="source ~/.zshrc"
-alias zsh:rc="code ~/.zshrc"
+alias zsh:config="code ~/.zshrc"
 alias brew:cl="brew update && brew upgrade && brew cleanup $FORMULAE_THAT_WERE_UPGRADED"

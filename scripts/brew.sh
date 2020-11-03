@@ -15,6 +15,7 @@ BREW_PREFIX=$(brew --prefix)
 # Install languages etc
 brew install node
 brew install yarn
+brew install gh
 
 # Install apps
 brew cask install visual-studio-code
