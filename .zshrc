@@ -1,4 +1,5 @@
 export ZSH="/Users/mattietea/.oh-my-zsh"
+export PATH="/opt/homebrew/bin:$PATH"
 
 ZSH_THEME="robbyrussell"
 
@@ -27,3 +28,4 @@ alias kill="kill-port"
 alias zsh:rl="source ~/.zshrc"
 alias zsh:config="code ~/.zshrc"
 alias brew:cl="brew update && brew upgrade && brew cleanup $FORMULAE_THAT_WERE_UPGRADED"
+

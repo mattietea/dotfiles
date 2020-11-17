@@ -4,13 +4,13 @@
 # git pull origin master
 
 # Install stuff
-sh ./brew.sh
+sh ./scripts/brew.sh
 
 # Configure zsh
-sh ./zsh.sh
+sh ./scripts/zsh.sh
 
 # Extras yarn
-sh ./extra.sh
+sh ./scripts/extra.sh
 
 # symlink zshrc file
 ln -sv -f ~/Desktop/dotfiles/.zshrc ~
