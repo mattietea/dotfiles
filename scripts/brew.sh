@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
 # Install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+sudo mkdir -p /opt/homebrew
+sudo chown -R $(whoami):staff /opt/homebrew
+cd /opt
+curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+
 
 # Make sure we’re using the latest Homebrew.
 brew update
-
-# Upgrade any already-installed formulae.
-brew upgrade
 
 # Save Homebrew’s installed location.
 BREW_PREFIX=$(brew --prefix)
