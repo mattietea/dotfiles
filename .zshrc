@@ -8,7 +8,6 @@ plugins=(
   node
   yarn
   npm
-  docker
   colorize
   zsh-syntax-highlighting
   zsh-autosuggestions
@@ -23,9 +22,9 @@ chpwd() {
   ls
 }
 
-alias cl="clear"
-alias kill="kill-port"
-alias zsh:rl="source ~/.zshrc"
-alias zsh:config="code ~/.zshrc"
+alias c="clear"
+alias k="kill-port"
+alias rl="source ~/.zshrc"
+alias cfg="code ~/.zshrc"
 alias brew:cl="brew update && brew upgrade && brew cleanup $FORMULAE_THAT_WERE_UPGRADED"
 

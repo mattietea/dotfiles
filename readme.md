@@ -34,4 +34,3 @@ sh ./.macos
 
 - [Filip Stefansson](https://github.com/filipstefansson/dotfiles) - dotfiles
 - [Mathias Bynens](https://mths.be/macos) - dotfile documentation
-- [Brittany Chiang](https://halcyon-theme.netlify.app/) - dotfile documentation
