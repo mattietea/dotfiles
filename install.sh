@@ -9,8 +9,8 @@ sh ./scripts/brew.sh
 # Configure zsh
 sh ./scripts/zsh.sh
 
-# Extras yarn
-sh ./scripts/extra.sh
+# Setup yarn
+sh ./scripts/yarn.sh
 
 # symlink zshrc file
 ln -sv -f ~/Desktop/dotfiles/.zshrc ~
