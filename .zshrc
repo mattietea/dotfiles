@@ -26,4 +26,3 @@ alias c="clear"
 alias k="kill-port"
 alias rl="source ~/.zshrc"
 alias cfg="code ~/.zshrc"
-
