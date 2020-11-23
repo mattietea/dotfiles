@@ -22,6 +22,8 @@ cd ~/Desktop/dotfiles
 sh ./install.sh
 ```
 
+> To set env variables, create a file called `.zshenv`
+
 ### macOS settings
 
 You can configure a few macOS settings by running the `.macos` file.

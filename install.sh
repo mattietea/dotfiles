@@ -7,7 +7,7 @@ git pull origin master
 sh ./scripts/brew.sh
 
 # Configure zsh
-sh ./scripts/zsh.ssh
+sh ./scripts/zsh.sh
 
 # Setup yarn
 sh ./scripts/yarn.sh
