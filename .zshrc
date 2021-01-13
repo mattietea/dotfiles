@@ -12,6 +12,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   git-open
+  kubectl
 )
 
 ZSH_DISABLE_COMPFIX="true"
@@ -23,6 +24,7 @@ chpwd() {
 }
 
 alias c="clear"
-alias k="kill-port"
-alias rl="source ~/.zshrc"
-alias cfg="code ~/.zshrc"
+alias k="kubectl"
+alias kp="kill-port"
+alias zrl="source ~/.zshrc"
+alias zcfg="code ~/.zshrc"
