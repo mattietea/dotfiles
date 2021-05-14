@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
 # oh-my-zsh
-git clone https://github.com/robbyrussell/oh-my-zsh.git $HOME/.oh-my-zsh
-
-# Change shell
-chsh zsh
+sudo sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Plugins
 git clone https://github.com/paulirish/git-open.git $HOME/.oh-my-zsh/plugins/git-open
