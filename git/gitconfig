@@ -1,0 +1,32 @@
+[user]
+
+  name = Matt Thomas
+  email = mattcthomas@me.com
+
+[alias]
+
+  amend = commit --amend --reuse-message=HEAD
+  commend = !git commit --amend --no-edit && git push --force-with-lease="main"
+  undo = reset --soft HEAD^1
+  m = machete
+
+[fetch]
+
+  prune = true
+
+[branch]
+
+  autosetupmerge = true
+
+[pull]
+
+  rebase = true
+
+[init]
+
+	defaultBranch = main
+
+[core]
+
+  ignorecase = false
+  excludesfile = ~/.gitignore_global

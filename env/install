@@ -1,0 +1,11 @@
+#!/usr/bin/env zsh
+set -e
+
+if [ $SPIN ]; then
+  echo "Setting Spin env"
+
+  sudo add-apt-repository ppa:virtuslab/git-machete -y
+  sudo apt-get update
+  sudo apt-get install -y python3-git-machete
+fi
+
