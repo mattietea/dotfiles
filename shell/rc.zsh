@@ -10,6 +10,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle yarn
 antigen bundle node
+antigen bundle brew
 antigen bundle sudo
 antigen bundle ruby
 antigen bundle rails
