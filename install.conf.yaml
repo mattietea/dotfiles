@@ -14,7 +14,7 @@
     ~/.zshrc: shell/rc.zsh
     # Git
     ~/.gitconfig: git/gitconfig
-    ~/.gitignore: git/gitignore_global
+    ~/.gitignore_global: git/gitignore_global
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
