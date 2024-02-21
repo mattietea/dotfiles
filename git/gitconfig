@@ -5,10 +5,13 @@
 
 [alias]
 
+  m = machete
+  a = absorb
+
   amend = commit --amend --reuse-message=HEAD
   commend = !git commit --amend --no-edit && git push --force-with-lease="main"
   undo = reset --soft HEAD^1
-  m = machete
+  tidy = m reapply
 
 [fetch]
 
@@ -16,7 +19,11 @@
 
 [branch]
 
-  autosetupmerge = true
+  autoSetupMerge = true
+
+[push]
+
+	autoSetupRemote = true
 
 [pull]
 
@@ -30,3 +37,4 @@
 
   ignorecase = false
   excludesfile = ~/.gitignore_global
+	editor = code --wait
