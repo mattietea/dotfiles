@@ -7,10 +7,12 @@ autoload -U compinit && compinit
 # Antigen
 antigen use oh-my-zsh
 
+# Broken completions
+# antigen bundle brew
+# antigen bundle gh
 antigen bundle git
 antigen bundle yarn
 antigen bundle node
-antigen bundle brew
 antigen bundle sudo
 antigen bundle ruby
 antigen bundle rails
