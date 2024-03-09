@@ -5,13 +5,27 @@
 
 [alias]
 
+  # git machete shortcuts
   m = machete
-  a = absorb
+  tidy = machete reapply
+  travel = machete traverse -W -l --return-to=here
+  # if the file ~/.git/machete exists run `git machete status` otherwise run `git status`
+  status = "!if [ -f .git/machete ]; then git machete status -L; else git status; fi"
+  update = "!git machete github retarget-pr"
+  go = "!git machete go"
 
-  amend = commit --amend --reuse-message=HEAD
-  commend = !git commit --amend --no-edit && git push --force-with-lease="main"
+  # gh shortcuts
+  open = "!gh pr view --web"
+  create = "!gh pr create && git machete github retarget-pr && gh pr view --web"
+
+  # git absorb shortcuts
+  a = absorb
+  absorb = "!git absorb --and-rebase"
+
+  # others
+  amend = commit --amend --no-edit
+  commend = "!git commit --amend --no-edit && git push -f"
   undo = reset --soft HEAD^1
-  tidy = m reapply
   fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"
 
 [fetch]
