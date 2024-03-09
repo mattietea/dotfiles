@@ -5,13 +5,22 @@
 
 [alias]
 
+  # git machete shortcuts
   m = machete
+  tidy = m reapply
+  travel = m traverse -W -l --return-to=here
+  # if the file ~/.git/machete exists run `git m status` otherwise run `git status`
+  status = "!if [ -f .git/machete ]; then git m status -L; else git status; fi"
+
+  # git absorb shortcuts
   a = absorb
 
-  amend = commit --amend --reuse-message=HEAD
-  commend = !git commit --amend --no-edit && git push --force-with-lease="main"
+  # git
+  create-pr = "!gh pr create --web"
+
+  amend = commit --amend --no-edit
+  commend = "!git commit --amend --no-edit && git push -f"
   undo = reset --soft HEAD^1
-  tidy = m reapply
   fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"
 
 [fetch]
