@@ -3,8 +3,3 @@
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
   branch = master
-[submodule "zsh/plugins/antigen"]
-	path = shell/plugins/antigen
-	url = https://github.com/zsh-users/antigen.git
-	ignore = dirty
-  branch = master
