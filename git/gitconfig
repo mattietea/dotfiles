@@ -1,7 +1,7 @@
 [user]
 
   name = Matt Thomas
-  email = mattcthomas@me.com
+	email = mattcthomas@me.com
 
 [alias]
 
@@ -18,15 +18,17 @@
   open = "!gh pr view --web"
   create = "!gh pr create && git machete github retarget-pr && gh pr view --web"
 
-  # git absorb shortcuts
-  a = absorb
-  absorb = "!git absorb --and-rebase"
+  absorb = '!git absorb --and-rebase'
 
   # others
   amend = commit --amend --no-edit
   commend = "!git commit --amend --no-edit && git push -f"
   undo = reset --soft HEAD^1
   fixup = "!git log -n 50 --pretty=format:'%h %s' --no-merges | fzf | cut -c -7 | xargs -o git commit --fixup"
+
+[absorb]
+
+  oneFixupPerCommit = true
 
 [fetch]
 
@@ -57,3 +59,18 @@
   ignorecase = false
   excludesfile = ~/.gitignore_global
   editor = code --wait
+
+[include]
+
+	path = /Users/mattietea/.config/dev/gitconfig
+
+[filter "lfs"]
+
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[http]
+
+	postBuffer = 157286400
