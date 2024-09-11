@@ -8,16 +8,18 @@ autoload -U compinit && compinit
 antigen use oh-my-zsh
 
 # Broken completions
-# antigen bundle brew
+antigen bundle brew
 # antigen bundle gh
-antigen bundle git
+# antigen bundle git
 antigen bundle yarn
 antigen bundle node
 antigen bundle sudo
 antigen bundle ruby
 antigen bundle rails
 antigen bundle ripgrep
+antigen bundle zsh-users/zsh-completions
 
+antigen bundle alexiszamanidis/zsh-git-fzf
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle marlonrichert/zsh-autocomplete@main
 antigen bundle zsh-users/zsh-autosuggestions
