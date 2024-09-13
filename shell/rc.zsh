@@ -34,6 +34,9 @@ export SAVEHIST=1000
 export HISTFILE=~/.zsh_history
 touch $HISTFILE
 
+# Completions
+eval "$(git machete completion zsh)"
+
 
 [[ -f /opt/dev/sh/chruby/chruby.sh ]] && { type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; } }
 
